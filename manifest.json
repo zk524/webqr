@@ -26,7 +26,7 @@
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "share_target": {
-    "action": "index.html",
+    "action": "index.html/share",
     "method": "POST",
     "enctype": "multipart/form-data",
     "params": {
