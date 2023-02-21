@@ -3,22 +3,10 @@
   "name": "WEB QR",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "src": "favicon.svg",
+      "sizes": "any",
       "purpose": "any maskable monochrome",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "purpose": "any maskable monochrome",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "purpose": "any maskable monochrome",
-      "sizes": "512x512"
+      "type": "image/svg+xml"
     }
   ],
   "start_url": ".",
@@ -47,7 +35,7 @@
       "short_name": "Scan",
       "description": "Scanner",
       "url": "scan",
-      "icons": [{ "src": "logo192.png", "sizes": "192x192" }]
+      "icons": [{ "src": "favicon.svg", "sizes": "any" }]
     }
   ]
 }
