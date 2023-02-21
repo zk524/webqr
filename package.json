@@ -1,6 +1,7 @@
 {
-  "name": "pwa-qrcode",
+  "name": "webqr",
   "version": "1.0.0",
+  "homepage": ".",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
@@ -14,6 +15,7 @@
     "@zxing/browser": "0.0.10",
     "@zxing/library": "0.8.0",
     "eslint": "^8.34.0",
+    "gh-pages": "^5.0.0",
     "qrcode": "^1.5.1",
     "react": "^18.2.0",
     "react-app-rewired": "^2.2.1",
@@ -36,7 +38,9 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "react-app-rewired build"
+    "build": "react-app-rewired build",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
