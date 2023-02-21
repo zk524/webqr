@@ -19,9 +19,7 @@ export default () => {
       <IconButton key='scanner' onClick={toggleScan} children={<QrCodeScanner color='primary' />} />
     </DialogTitle>
     <DialogContent>
-      <Input fullWidth inputRef={inputRef} placeholder={'CONTEXT'} onChange={(e: ChangeEvent<HTMLInputElement>) => toDataURL(e.target!.value, { margin: 1, scale: 16 }).then((data) => {
-        QR([data])
-      }).catch(() => { })} />
+      <Input fullWidth inputRef={inputRef} placeholder={'CONTEXT'} onChange={(e: ChangeEvent<HTMLInputElement>) => Promise.all(e.target!.value!.match(/.{2048}|.+/g)?.map((v) => toDataURL(v, { margin: 1, scale: 16 })) ?? ['']).then(QR).catch(() => { })} />
       {scan ? <video id="video" style={{ width: '100%' }} /> : qr.map((src, i) => <img key={src + i} style={{ width: '100%' }} src={src} />)}
     </DialogContent>
   </Dialog>
