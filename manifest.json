@@ -30,12 +30,20 @@
     "method": "POST",
     "enctype": "multipart/form-data",
     "params": {
-      "title": "title",
-      "text": "text",
-      "url": "url",
+      "title": "received_title",
+      "text": "received_text",
+      "url": "received_url",
       "files": [
         {
-          "name": "image",
+          "name": "received_html_files",
+          "accept": "text/html"
+        },
+        {
+          "name": "received_css_files",
+          "accept": "text/css"
+        },
+        {
+          "name": "received_image_files",
           "accept": "image/*"
         }
       ]
