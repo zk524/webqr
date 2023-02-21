@@ -1,6 +1,6 @@
 {
-  "short_name": "NeoOffLine",
-  "name": "Neo Off Line",
+  "short_name": "WEB QR",
+  "name": "WEB QR",
   "icons": [
     {
       "src": "favicon.ico",
@@ -22,7 +22,7 @@
     }
   ],
   "start_url": ".",
-  "display": "standalone",
+  "display": "fullscreen",
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "share_target": {
