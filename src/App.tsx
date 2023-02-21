@@ -11,12 +11,8 @@ export default () => {
   const [qr, QR] = useState(['']);
   const codeReader = useMemo(() => new BrowserQRCodeReader(new Map().set(2, [11]), { delayBetweenScanAttempts: 100, delayBetweenScanSuccess: 100 }), []);
   const toggleScan = () => {
-    if (scan) (console.log(ctrl.scan), SCAN(false))
-    else (SCAN(true), ctrl.scan = codeReader.decodeFromVideoDevice(void 0, 'video', handleScan))
-  }
-  const handleScan = (s: any) => {
-    const data = s?.getText() ?? ''
-    data && ctrl.scan!.then((s) => (s.stop(), SCAN(false), QR(['']), inputRef.current!.value = data))
+    if (scan) { BrowserQRCodeReader.releaseAllStreams(); SCAN(false) }
+    else SCAN(true); ctrl.scan = codeReader.decodeFromVideoDevice(void 0, 'video', (data: any) => data && ctrl.scan!.then((s) => (s.stop(), SCAN(false), QR(['']), inputRef.current!.value = data!.getText())))
   }
   return <Dialog open fullWidth>
     <DialogTitle display='flex'>
