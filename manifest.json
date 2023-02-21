@@ -36,7 +36,7 @@
       "files": [
         {
           "name": "graphs",
-          "accept": ["image/svg+xml", ".png", ".jpg", ".gif"]
+          "accept": ["image/svg+xml", "image/png", "image/jpg", "image/gif"]
         }
       ]
     }
