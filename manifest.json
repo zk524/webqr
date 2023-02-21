@@ -40,5 +40,14 @@
         }
       ]
     }
-  }
+  },
+  "shortcuts": [
+    {
+      "name": "Scan",
+      "short_name": "Scan",
+      "description": "Scanner",
+      "url": "/scan",
+      "icons": [{ "src": "logo192.png", "sizes": "192x192" }]
+    }
+  ]
 }
