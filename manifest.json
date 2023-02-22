@@ -34,7 +34,7 @@
       "name": "Scan",
       "short_name": "Scan",
       "description": "Scanner",
-      "url": "scan",
+      "url": "https://zk524.github.io/webqr/scan",
       "icons": [{ "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
     }
   ]
