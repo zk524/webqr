@@ -35,7 +35,7 @@
       "short_name": "Scan",
       "description": "Scanner",
       "url": "scan",
-      "icons": [{ "src": "favicon.svg", "sizes": "any" }]
+      "icons": [{ "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
     }
   ]
 }
