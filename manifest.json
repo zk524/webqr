@@ -9,7 +9,7 @@
       "type": "image/svg+xml"
     }
   ],
-  "start_url": ".",
+  "start_url": "webqr",
   "display": "standalone ",
   "theme_color": "#000000",
   "background_color": "#ffffff",
@@ -34,7 +34,7 @@
       "name": "Scan",
       "short_name": "Scan",
       "description": "Scanner",
-      "url": "/webqr/scan",
+      "url": "scan",
       "icons": [{ "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
     }
   ]
